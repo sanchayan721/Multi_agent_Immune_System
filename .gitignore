@@ -12,8 +12,8 @@
 
 # Other Container Configurations
 
-APDescription.txt
-MTPs-Main-Container.txt
+/APDescription.txt
+/MTPs-Main-Container.txt
 
 # Files in src
 /src/java/APDescription.txt
