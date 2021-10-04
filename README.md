@@ -136,7 +136,7 @@ protected void setup(){
  ```
 
 #### Means of Communication - Message Passing
-  * [Cell Agent: ] It communicates with the Cell Agent using FIPA-ACL Message ``INFORM'' using ``Signature\_Verification\_Channel'' for requesting and retrieving the DNA Identification Code  from the cell.
+  * [Cell Agent: ] It communicates with the Cell Agent using FIPA-ACL Message "INFORM" using Signature_Verification_Channel for requesting and retrieving the DNA Identification Code  from the cell.
   * [Memory Agent: ] It communicates with the Memory Agent using the same FIPA-ACL Message type for sending the DNA code and receiving KillOrders.
 
 ```java
@@ -166,7 +166,7 @@ Memory Agent it the one which detects if a cell is infected or not by looking at
 
 
 #### Communication
-  * In order to receive any new DNA signature from the phagocyte agent it uses FIPA-ACL Protocol with ``DNA\_Verification\_Channel''.
+  * In order to receive any new DNA signature from the phagocyte agent it uses FIPA-ACL Protocol with DNA_Verification_Channel.
   * In order to send kill signal to the same it uses the very same as well.
 
 ```java
@@ -217,7 +217,7 @@ After some time, it kills the cell and thereby commits suicide.
 ```
 
 #### Means of Communications 
-  * [Cell Agent: ] In order to communicate with the cell in order to request it to change its DNA the virus agent uses FIPA-ACL "INFORM" Message Template with "Update_DNA_Message_From_Virus" communication channel.
+  * [Cell Agent: ] In order to communicate with the cell in order to request it to change its DNA the virus agent uses FIPA-ACL "INFORM" Message Template with Update_DNA_Message_From_Virus communication channel.
 
 ```java
     ACLMessage messageToCell = new ACLMessage(ACLMessage.INFORM);  // Message type
