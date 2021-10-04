@@ -1,0 +1,20 @@
+# Files inside .idea
+
+/.idea/workspace.xml
+/.idea/compiler.xml
+/.idea/jarRepositories.xml
+/.idea/misc.xml
+/.idea/vcs.xml
+/.idea/runConfigurations.xml
+
+# Files inside target
+/target/*
+
+# Other Container Configurations
+
+/APDescription.txt
+/MTPs-Main-Container.txt
+
+# Files in src
+/src/java/APDescription.txt
+/src/java/MTPs-Main-Container.txt
