@@ -5,7 +5,8 @@ Immune System of any multi-cellular organism is a very complex system with a lot
 The goal of this project is to model components of the Immune system and their behaviours using self-motivated interacting agents using Java Middle-ware Java Agent Development Framework (JADE) and simulate a situation when the immune system is under attack from a virus.  
 
 ## Universe
-Universe is the class which controls the dynamics of the application and it is the second entry point of the application after App.java. It instantiates two different types of containers namely the Primary and the Auxiliary and initializes all of the Agents. Initially it creates a Primary container and creates a Memory Agent and a Phagocyte Agent inside it. \par 
+Universe is the class which controls the dynamics of the application and it is the second entry point of the application after App.java. It instantiates two different types of containers namely the Primary and the Auxiliary and initializes all of the Agents. Initially it creates a Primary container and creates a Memory Agent and a Phagocyte Agent inside it.
+
 The Grid is a virtual Cartesian Coordinate system where the containers live in. Depending upon the size of the Grid, Universe creates Auxiliary containers and a **HashMap** of the Container Controllers and their position on the grid, so that this map can later be used by the Agents in order to move around the the universe. The code snippet below demonstrates how the grids are allocated to the Auxiliary Containers and how the HashMap is created.
 <p>
 Afterwards the Cell Agents are instantiated in those containers with their name containing that of the Container they belong to.  </p>
