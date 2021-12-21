@@ -7,7 +7,7 @@ The goal of this project is to model components of the Immune system and their b
 ## Universe
 Universe is the class which controls the dynamics of the application and it is the second entry point of the application after App.java. It instantiates two different types of containers namely the Primary and the Auxiliary and initializes all of the Agents. Initially it creates a Primary container and creates a Memory Agent and a Phagocyte Agent inside it.
 
-The Grid is a virtual Cartesian Coordinate system where the containers live in. Depending upon the size of the Grid, Universe creates Auxiliary containers and a **HashMap** of the Container Controllers and their position on the grid, so that this map can later be used by the Agents in order to move around the the universe. The code snippet below demonstrates how the grids are allocated to the Auxiliary Containers and how the HashMap is created.
+The Grid is a virtual Cartesian Coordinate system where the containers live in. Depending upon the size of the Grid, Universe creates Auxiliary containers and a <code>HashMap</code> of the Container Controllers and their position on the grid, so that this map can later be used by the Agents in order to move around the the universe. The code snippet below demonstrates how the grids are allocated to the Auxiliary Containers and how the HashMap is created.
 <p>
 Afterwards the Cell Agents are instantiated in those containers with their name containing that of the Container they belong to.  </p>
 
@@ -44,7 +44,7 @@ The main Container is created at the beginning of the program and instantiates t
 ```
 
 ### Auxiliary Container
-The auxiliary container is the one that contains all of the cell agents, the phagocyte agents and the virus. This container also has a method isCellAlive() to check if the cell is alive in the container and isThereAVirus() method which is used by the virus itself while replication.
+The auxiliary container is the one that contains all of the cell agents, the phagocyte agents and the virus. This container also has a method <code>isCellAlive()</code> to check if the cell is alive in the container and <code>isThereAVirus()</code> method which is used by the virus itself while replication.
 
 ```java
     public ContainerController CreateAuxiliaryContainer(int index){
