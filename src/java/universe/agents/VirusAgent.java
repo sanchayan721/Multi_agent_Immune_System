@@ -47,8 +47,10 @@ public class VirusAgent extends Agent {
             try {
 
                 ContainerController currentContainerController = Universe.CONTAINER_CONTROLLER_HASH_MAP.get(getContainerController().getContainerName());
+                /*
                 String currentContainerName = currentContainerController.getContainerName();
-                //System.out.println("Yo! Virus at ".concat(currentContainerName));
+                System.out.println("Yo! Virus at ".concat(currentContainerName));
+                */
                 ArrayList<ContainerController> possiblePlacesToClone = adjacentContainers.getAdjacentContainerControllers(currentContainerController);
                 ArrayList<ContainerController> cloningLocations = getPlacesToClone(possiblePlacesToClone);
                 //System.out.println(cloningLocations);
