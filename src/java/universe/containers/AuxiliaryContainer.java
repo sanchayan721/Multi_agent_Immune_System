@@ -52,7 +52,7 @@ public class AuxiliaryContainer {
         try {
             auxiliaryContainerController.getAgent("virus.".concat(auxiliaryContainerController.getContainerName()));
             return true;
-        }catch (Exception exception){
+        } catch (Exception exception){
             return false;
         }
     }
